@@ -1,0 +1,62 @@
+title: Jake McClure
+email:
+author: jakemcclure
+description: Millennial physician, digital native, visualizing healthcare and technology
+
+repository: jakemcclure/JakeMcClure.github.com
+
+#baseurl: ""
+url: "http://JakeMcClure.net"
+logo: ""
+
+social:
+  name: Jake McClure
+  links:
+    - https://twitter.com/Jake_McClure
+    - https://www.facebook.com/
+    - https://www.linkedin.com/in/JakeMcClure
+    - https://github.com/jakemcclure
+
+twitter:
+  username: "@Jake_McClure"
+twitter_username: Jake_McClure
+github_username:  jakemcclure
+
+#google_plus_id: JakeMcClure
+#ga_username: UA-
+#amazon:
+#  affiliates_tag: benbalter07-20
+
+#Build Settings
+markdown: kramdown
+#theme: minima
+
+timezone: America/New_York
+encoding: UTF-8
+lang: en-US
+branch: master
+
+exclude:
+  - README.md
+  - LICENSE
+  - readme.md
+  - bundle
+  - src
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - bower.json
+  - package.json
+  - script
+  - scss
+  - media
+  - ".bundle"
+  - vendor
+  - node_modules
+
+gems:
+  - jekyll-feed
+  - jekyll-admin
+
+sass:
+  style: :compressed
