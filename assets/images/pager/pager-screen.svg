@@ -1,0 +1,45 @@
+<svg viewBox="0 0 238 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,2.27652788 C0,1.01923625 1.00551573,0 2.2696228,0 L228.930377,0 C230.183855,0 231.2,1.02230813 231.2,2.27652788 L231.2,97.7234721 C231.2,98.9807637 230.194484,100 228.930377,100 L2.2696228,100 C1.01614474,100 0,98.9776919 0,97.7234721 L0,2.27652788 Z M4.53333333,6.79123157 C4.53333333,5.53962643 5.5472569,4.525 6.80780301,4.525 L201.72553,4.525 C202.981685,4.525 204,5.54846916 204,6.79123157 L204,74.6587684 C204,75.9103736 202.986076,76.925 201.72553,76.925 L6.80780301,76.925 C5.55164809,76.925 4.53333333,75.9015308 4.53333333,74.6587684 L4.53333333,6.79123157 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pager" transform="translate(-69.000000, -208.000000)">
+            <g transform="translate(46.000000, 195.000000)" id="pager-screen">
+                <g transform="translate(24.000000, 13.000000)">
+                    <text id="Contact-me" font-family="courier, courier" font-size="18" font-weight="normal" line-spacing="24" letter-spacing="-0.5" fill="#333333">
+                        <tspan x="7.46666667" y="15.9749996">Contact me</tspan>
+                    </text>
+                    <g id="pager-display" transform="translate(0.666667, 0.050000)">
+                        <g id="display-shadow">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#333333" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="display-buttons" transform="translate(40.000000, 4.000000)">
+                            <g id="up/down" transform="translate(169.533333, 0.525000)">
+                                <rect id="up" fill="#3F3F3F" x="0" y="0" width="18.1333333" height="27.15" rx="2.26666667"></rect>
+                                <rect id="down" fill="#3F3F3F" x="0" y="31.675" width="18.1333333" height="27.15" rx="2.26666667"></rect>
+                                <polygon id="down" fill="#7F7F7F" transform="translate(9.333333, 44.612500) rotate(-180.000000) translate(-9.333333, -44.612500) " points="13.3333333 47.6125 9.33333333 41.6125 5.33333333 47.6125"></polygon>
+                                <polygon id="up" fill="#7F7F7F" points="13.3333333 16.6125 9.33333333 10.6125 5.33333333 16.6125"></polygon>
+                            </g>
+                            <g id="left-right" transform="translate(0.866667, 75.137500)">
+                                <g id="L">
+                                    <rect id="left" fill="#3F3F3F" x="0" y="0" width="36.2666667" height="18.1" rx="4"></rect>
+                                    <polygon id="rt-copy" fill="#7F7F7F" transform="translate(17.000000, 9.000000) scale(-1, 1) rotate(-270.000000) translate(-17.000000, -9.000000) " points="21 12 17 6 13 12"></polygon>
+                                </g>
+                                <g id="R" transform="translate(40.000000, 0.000000)">
+                                    <rect id="right" fill="#3F3F3F" x="0.533333333" y="0" width="36.2666667" height="18.1" rx="4"></rect>
+                                    <polygon id="rt" fill="#7F7F7F" transform="translate(19.000000, 9.000000) rotate(-270.000000) translate(-19.000000, -9.000000) " points="23 12 19 6 15 12"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

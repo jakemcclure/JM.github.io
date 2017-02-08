@@ -1,0 +1,9 @@
+<svg viewBox="409 222 182 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M409,232.001799 C409,226.477958 413.487127,222 419.007567,222 L472.5,222 C481,222 483,232 483,238 L581.004038,238 C586.524655,238 591,242.477559 591,248.003297 L591,361.996703 C591,367.521371 586.523723,372 581.004481,372 L418.995519,372 C413.475146,372 409,367.531167 409,361.998201 L409,232.001799 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="182" height="150" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <use id="folder" stroke="#ffffff" mask="url(#mask-2)" stroke-width="2" fill="none" xlink:href="#path-1"></use>
+</svg>

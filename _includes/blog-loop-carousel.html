@@ -1,0 +1,27 @@
+<section id="blog-loop" class="cf frame wrapper">
+  <main class="container">
+    <header class="section-header container">Blog</header>
+    <amp-carousel
+          width="320"
+          height="200"
+          layout="container"
+          type="slides"
+          autoplay
+          delay="7000">
+      {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <header class="post-header">
+          <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          <time class="post-meta date" datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
+          {% if post.category %}<span class="post-meta category">{{ post.category }}</span>{% endif %}
+          </header>
+        <main class="post-excerpt" itemprop="description">
+          <p>{{ post.excerpt | strip_html | truncatewords: 75 }}
+            <span class="link"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">Read More</a></span>
+            </p>
+          </main>
+        </article>
+      {% endfor %}
+    </amp-carousel>
+  </main>
+  </section>

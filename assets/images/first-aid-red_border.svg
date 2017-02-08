@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="154px" viewBox="0 0 154 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>first-aid-plus-red-border</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-421.000000, -9.000000)">
+            <g id="first-aid-plus-red-border" transform="translate(422.000000, 10.000000)">
+                <path d="M92.6666667,59.3333333 L92.6666667,26 L59.3333333,26 L59.3333333,59.3333333 L26,59.3333333 L26,92.6666667 L59.3333333,92.6666667 L59.3333333,126 L92.6666667,126 L92.6666667,92.6666667 L126,92.6666667 L126,59.3333333 L92.6666667,59.3333333 Z" fill="#E32222"></path>
+                <rect id="Rectangle-53" stroke="#E12323" stroke-width="2" x="0" y="0" width="152" height="152" rx="20"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

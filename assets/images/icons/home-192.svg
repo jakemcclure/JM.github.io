@@ -1,0 +1,9 @@
+<svg viewBox="0 0 172 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="68.8 144 68.8 93.1764706 103.2 93.1764706 103.2 144 146.2 144 146.2 76.2352941 172 76.2352941 86 0 0 76.2352941 25.8 76.2352941 25.8 144"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="172" height="144" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <use id="home-192" stroke="#ffffff" mask="url(#mask-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" xlink:href="#path-1"></use>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <ellipse id="path-1" cx="34.3461118" cy="34.3598158" rx="34.3461118" ry="34.3598158"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="72.6922237" height="72.7196315">
+            <rect x="-2" y="-2" width="72.6922237" height="72.7196315" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <ellipse id="path-3" cx="33.8009354" cy="33.8144219" rx="16.3552913" ry="16.361817"></ellipse>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="36.7105827" height="36.7236341">
+            <rect x="15.4456441" y="15.4526048" width="36.7105827" height="36.7236341" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="JMbox-dark" transform="translate(0.000000, -194.000000)">
+            <g id="JM-dark" transform="translate(2.000000, 3.000000)">
+                <g id="J">
+                    <g id="bell" transform="translate(0.500575, 193.977654)">
+                        <g id="bell-outer">
+                            <use fill-opacity="0.3028476" fill="#C3C3C3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use stroke="#2B333D" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="bell-inner">
+                            <use fill="#50B38A" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use stroke="#2B333D" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

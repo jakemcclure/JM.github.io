@@ -1,18 +1,29 @@
-title: Jake McClure
-email:
-author: jakemcclure
-description: Millennial physician, digital native, visualizing healthcare and technology
-
-repository: jakemcclure/JakeMcClure.github.com
-
-#baseurl: ""
+title:  Hoofbeats
+email:  holler@JakeMcClure.net
+description: Understanding healthcare and technology in the Information Age
+baseurl: ""
 url: "http://JakeMcClure.net"
-logo: ""
+
+# ASSETS
+logo:  "/assets/images/hoof-logo.svg"
+logo-amp:  "/assets/images/hoofbeats-text.svg"
+logo-quote: "/assets/images/hoofbeats-quote-text-container.svg"
+logo-blog-text: "/assets/images/hoofbeats-text.svg"
+author_image:  "/assets/images/author.png"
+
+#PERSONNEL
+name:  "Jake McClure, M.D."
+author: jakemcclure
+bio: Millennial physician, steward of practical integration of technology in healthcare and education
+repository: jakemcclure/JakeMcClure.github.com
 
 social:
   name: Jake McClure
   links:
     - https://twitter.com/Jake_McClure
+    - https://medium.com/@JakeMcClure
+    - https://nuzzel.com/Jake_McClure
+    - https://www.highly.co/by/jakemcclure
     - https://www.facebook.com/
     - https://www.linkedin.com/in/JakeMcClure
     - https://github.com/jakemcclure
@@ -20,21 +31,44 @@ social:
 twitter:
   username: "@Jake_McClure"
 twitter_username: Jake_McClure
-github_username:  jakemcclure
+youtube_username:  UC6yHs_AREfWOMhR3Qixf2aA
+github_username:  JakeMcClure
+snapchat_username: Jake-McClure
 
-#google_plus_id: JakeMcClure
-#ga_username: UA-
-#amazon:
-#  affiliates_tag: benbalter07-20
+Twitter:
+  username: Jake_McClure
 
-#Build Settings
-markdown: kramdown
-#theme: minima
+google_analytics: UA-76343771-1
+google_site_verification: UA-76343771-1
+ga_username: UA-76343771-1
 
-timezone: America/New_York
-encoding: UTF-8
-lang: en-US
-branch: master
+amazon:
+  affiliates_tag: mcclure-20
+
+# RECYCLED LINKS
+prime-trial-banner: "amp/_store/_prime_trial_320x50.html"
+
+# BUILD MODIFIERS
+collections:
+- graphics
+- infographics
+- apps
+- workflows
+
+# Gemfile, Gemfile.lock - The Gemfile and Gemfile.lock files are used by Bundler to keep track of the required gems and gem versions you need to build your Jekyll site.
+
+excerpt_separator:  <!-- excerpt -->
+paginate:  6
+permalink:  pretty
+show_drafts:  false
+markdown:  kramdown
+kramdown:
+  parse_block_html:  true
+  input:  GFM
+
+sass:
+  sass_dir:  _sass
+  style:  compressed
 
 exclude:
   - README.md
@@ -43,6 +77,7 @@ exclude:
   - bundle
   - src
   - CNAME
+  - google*.html
   - Gemfile
   - Gemfile.lock
   - bower.json
@@ -57,6 +92,12 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-admin
-
-sass:
-  style: :compressed
+  - jekyll-paginate
+  - jekyll-compose
+  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-livereload
+  - jekyll-assets
+  - autoprefixer-rails
+  - neat

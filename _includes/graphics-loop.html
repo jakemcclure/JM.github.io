@@ -1,0 +1,33 @@
+<section id="graphics-loop" class="cf frame wrapper">
+  <main class="container">
+
+    <header class="section-header">Visual Abstracts</header>
+      <h3>Looking for <a href="{{ site.baseurl }}/graphics/#visual-abstract">images to use</a> in your own work?</h3>
+
+    <header class="section-header">Graphics</header>
+    <div class="assets">
+
+      <amp-carousel
+            width="320"
+            height="240"
+            layout="responsive"
+            type="slides"
+            autoplay
+            delay="5000">
+      {% for graphic in site.graphics %}
+
+        <div class="graphic">
+          <a href="{{ graphic.graphic_path }}" itemprop="url">
+            <amp-img src="{{ graphic.graphic_path }}" alt="{{ graphic.title }}" height="{{ graphic.graphic_height }}" width="{{ graphic.graphic_width }}" layout="responsive"></amp-img>
+          </a>
+        </div>
+
+      {% endfor %}
+      </amp-carousel>
+
+    </div>
+
+
+
+  </main>
+</section>

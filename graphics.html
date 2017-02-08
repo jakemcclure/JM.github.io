@@ -1,0 +1,69 @@
+---
+layout: default
+title: Graphics •  by Jake McClure
+permalink: /graphics/
+images:
+  - title: scalpel
+    path: assets/images/scalpel.svg
+    image_width: 609
+    image_height: 93
+  - title: pill-half
+    path: assets/images/pill-half.svg
+    image_width: 152
+    image_height: 152
+  - title: randomize
+    path: assets/images/randomize.svg
+    image_width: 150
+    image_height: 178
+  - title: message-right
+    path: assets/images/message-right.svg
+    image_width: 152
+    image_height: 133
+  - title: message-left
+    path: assets/images/message-left.svg
+    image_width: 152
+    image_height: 133
+  - title: lightbulb
+    path: assets/images/lightbulb.svg
+    image_width: 298
+    image_height: 400
+  - title: male
+    path: assets/images/male.svg
+    image_width: 72
+    image_height: 156
+  - title: female
+    path: assets/images/female.svg
+    image_width: 84
+    image_height: 156
+---
+
+<main id="graphics" class="wrapper">
+  <section id="graphic-design" class="cf frame wrapper">
+    <header class="section-header">Graphics</header>
+    <div class="assets cf container">
+      <amp-carousel
+            width="320"
+            height="180"
+            layout="responsive"
+            type="slides"
+            autoplay
+            delay="5000">
+      {% for graphic in site.graphics %}
+        <main class="graphic" itemprop="content">
+          <amp-img src="{{ graphic.graphic_path }}" alt="{{ graphic.title }}" height="{{ graphic.graphic_height }}" width="{{ graphic.graphic_width }}" layout="responsive"></amp-img>
+          </main>
+      {% endfor %}
+      </amp-carousel>
+    </div>
+  </section>
+
+  <section id="visual-abstract" class="cf frame container">
+    <header class="section-header">Visual Abstract Assets</header>
+    <div id="visual-abstract-assets" class="cf">
+      {% for image in page.images %}
+      <amp-img class="asset" src="{{ site.baseurl }}/{{ image.path }}" width="{{ image.image_width }}" height="{{ image.image_height }}" layout="responsive"></amp-img>
+      {% endfor %}
+    </div>
+  </section>
+  {% include {{ site.prime-trial-banner }} %}
+</main>
