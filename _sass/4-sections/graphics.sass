@@ -1,0 +1,43 @@
+#graphics-loop .graphic, #graphic-design .graphic
+  @include fill-parent
+
+
+#visual-abstract-assets
+  display: flex
+  flex-wrap: wrap
+  //align-items: baseline
+
+  .asset
+    width: 45%
+    margin: 0.5em
+    max-height: 8em
+    max-width: 12em
+
+  @include media(640px)
+    .asset
+      width: 30%
+  @include media(900px)
+    .asset
+      width: 20%
+
+#graphics-loop
+  background: $grey-50
+  .container
+    padding-left: 0.4em
+    padding-right: 0.4em
+
+  h3
+    font:
+      size: 1.5rem
+      weight: 200
+    margin-bottom: 4em
+
+    a
+      color: $secondary-color
+      padding: 0.05em 0.2em
+      font-weight: 300
+      &:hover
+        text-decoration: none
+        border-radius: 0.5em
+        border-width: 0px
+        background-color: $grey-100

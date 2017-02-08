@@ -1,0 +1,32 @@
+#site-footer
+  position: fixed
+  bottom: 3rem
+  z-index: -100
+  //padding: $rs * 1 0
+  padding: 1rem 0 1rem 0
+  background: $grey-L10
+  text-align: center
+  //vertical-align: middle
+  vertical-align: baseline
+  color: $grey-L40
+  font:
+    family: $font-SSS
+    size: $rs * 0.6
+  //line-height: $rs * 1
+
+  div
+    width: 90%
+    margin: 0 auto
+    > p
+      text-align: left
+      margin: 0
+      padding-top: 0.3em
+
+  a
+    color: lighten($primary-light, 30%)
+    text-decoration: none
+    border: none
+    //border-bottom: 0.05em dotted $primary-light
+    &:hover
+      color: darken($primary-light, 20%)
+      background-color: $primary-dark

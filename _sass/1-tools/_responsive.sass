@@ -1,0 +1,12 @@
+.site-header
+  @include respond-to(800)
+    padding: 0 $rs * 0.5
+
+#hero .site-description
+  @include media(640)
+    font-size: 1.1em
+    weight: 200
+
+#blog-loop, #appHOF
+  @include media(640)
+    @include span-columns(6)

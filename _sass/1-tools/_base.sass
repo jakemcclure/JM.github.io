@@ -1,0 +1,56 @@
+$rs: 16px
+$size1: 0.0625em
+$size2: 0.125em
+$size3: 0.1875em
+$size5: 5 * $size1
+$size10: 2 * 0.3125em
+$size20: 2 * $size10
+$size30: 3 * $size10
+$size50: 5* $size10
+$local-max-width: 45em
+
+$font-serif: Georgia,Cambria,"Times New Roman",Times,"Lora",serif
+$font-playfair: "Playfair Display",Georgia,Cambria,"Times New Roman",Times,"Lora",serif
+$font-sans: "Helvetica Neue","Open Sans",Arial,Helvetica,sans-serif
+$font-Lato: "Lato",$font-sans
+$font-SSS: 'Source Sans Pro',$font-stack-system
+$font-Adamina: 'Adamina',$font-serif
+$font-Questrial: 'Questrial',$font-sans
+
+@mixin respond-to($breakpoint)
+  @media only screen and (max-width: $breakpoint + px)
+    @content
+
+// only needed for syntax highlighting
+%vertical-rhythm
+  margin-bottom: $rs
+
+// FLUID TYPOGRAPHY
+\:root
+  font-size: 100%
+
+body
+  background:
+    color: $flat-white
+  font:
+    family: $font-SSS
+    weight: 300
+  color: $primary-dark
+  margin: 0 auto
+  text-align: center
+  padding: 0
+  text-rendering: optimizelegibility
+  -webkit-font-smoothing: antialiased
+  -moz-font-feature-settings: "liga=1, dlig=1"
+  -ms-font-feature-settings: "liga", "dlig"
+  -webkit-font-feature-settings: "liga", "dlig"
+  -o-font-feature-settings: "liga", "dlig"
+  font-feature-settings: "liga", "dlig"
+
+.dark
+  background: $primary-dark
+  color: white
+
+.light
+  background: white
+  color: $primary-dark

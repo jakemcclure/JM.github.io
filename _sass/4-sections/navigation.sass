@@ -1,0 +1,82 @@
+#sitenav
+  @include fill-parent
+  position: fixed
+  z-index: 1000
+  bottom: 0
+  text-align: center
+  height: 4em
+  margin: 0
+  padding: 0
+  background: darken($primary-dark, 10%)
+  box-shadow: 0 -0.125em 0.3125em rgba(0,0,0,.26)
+  color: white
+  @include media(640px)
+    height: 5em
+  @include media(900px)
+    height: 6em
+
+  #bottomnav
+    //@include fill-parent
+    @include outer-container
+    max-width: 48em
+    margin: 0 auto
+
+    .nav-right
+      right: $rs * 0
+
+    .nav-left
+      left: $rs * 0
+
+    ul
+      margin: 0 auto 0.5em
+      padding: 0
+      display: flex
+      position: absolute
+      //top: 10px
+      bottom: 0
+      font:
+        family: $font-SSS
+        weight: 400
+        style: normal
+        //size: 0.7em
+        size: 3vw
+      //line-height: 30px
+      line-height: 1
+      text-transform: uppercase
+
+      @include media(640px)
+        font-size: 2.5vw
+        margin-bottom: 0.75em
+      @include media(900px)
+        margin-bottom: 1em
+        max-width: 1200
+        font-size: 1.8vw
+        font-weight: 300
+
+    ul, li
+      list-style-type: none
+    li
+      padding: 0 0.2em
+      display: flex
+      flex-direction: column
+      amp-img
+        display: block
+        margin: 0 auto 0.3em
+      a
+        //display: flex
+        letter-spacing: 0.04em
+        text-decoration: none
+        color: white
+        padding: .25rem .3rem 0
+        &:hover, &:focus
+          color: $grey-color
+          border-bottom: $size1 solid $primary-light
+        @include media(900px)
+          padding: .25rem .5rem
+
+    a.active
+      color: $primary-light
+    .active
+      svg
+        path
+          stroke: $primary-light

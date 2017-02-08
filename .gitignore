@@ -15,5 +15,4 @@ comments.json
 /public/storage
 .env
 /spec/examples.txt
-_sass
 google*.html

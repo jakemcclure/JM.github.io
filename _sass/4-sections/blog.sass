@@ -1,0 +1,119 @@
+.blog-header
+  @include fill-parent
+  max-width: $local-max-width
+  margin: 0 auto
+  position: relative
+  padding: 0
+
+  .blog-title
+    margin-bottom: 0.5em
+    font-size: 3.125em
+    font-weight: 700
+    letter-spacing: 0.125em
+    outline: 0
+    line-height: 3.125
+    word-break: break-word
+    color: $primary-dark
+
+#blog-loop .container
+  background: $flat-white
+
+#blog-loop
+  .items
+    width: 100%
+    @include media(680px)
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      flex-direction: row
+      .post
+        max-width: 40vw
+    @include media(900px)
+      .post
+        max-width: 30vw
+
+
+  .post, section
+    background: white
+    //margin: 0 auto
+
+  .container
+    max-width: 60em
+
+    .post
+      position: relative
+      text-align: left
+      //border: $size1 solid $grey-border
+      border-radius: 0.25em
+      margin: 1em 0.2em
+      //&:last-child
+        border-bottom: 0px
+      box-shadow: 0 0.125em 0.3125em rgba(0,0,0,.2)
+      @include media(525px)
+        margin: 1em
+
+      .post-title
+        letter-spacing: -0.02em
+        font:
+          weight: 700
+          style: normal
+          //size: 36px
+          size: 1.2em
+        display: block
+        line-height: 1.05
+        margin: 0.5em 0 0
+        a
+          text-decoration: none
+          color: $grey-600
+          &:hover
+            text-decoration: none
+            color: $grey-500
+
+      .post-excerpt
+        text-align: left
+        //letter-spacing: -0.01em
+        //font-size: 1.25em
+        font:
+          size: 0.8em
+          weight: 300
+          style: normal
+        //line-height: 1.59
+        line-height: 1.4
+        //color: #666665
+        color: $grey-L20
+        p
+          margin: 0.2em auto
+        .link
+          display: inline-block
+          //float: right
+          padding-left: 1.5rem
+          //bottom: 0
+          //right: 0.5em
+          amp-img
+            margin-bottom: -0.2em
+          a
+            color: transparentize($secondary-color, 0.6)
+            border-bottom: $size1 solid $grey-border
+            text-transform: uppercase
+            text-decoration: none
+            font-size: 0.6rem
+            letter-spacing: 0.1em
+            font-weight: 400
+
+      .post-meta
+        bottom: 0
+        text-align: left
+        //font-size: 14px
+        font-size: 0.6em
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        line-height: 1
+        a
+          color: $grey-200
+      .category
+        margin-left: 2rem
+        color: transparentize($secondary-color, 0.7)
+        background: none
+        border: $size1 solid transparentize($secondary-color, 0.85)
+        border-radius: 0.5em
+        padding: 0 $size10

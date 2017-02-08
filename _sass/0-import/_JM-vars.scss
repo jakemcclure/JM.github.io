@@ -1,0 +1,237 @@
+/* PALETTES
+  http://flatcolors.net/palette/581-flat-ui-design
+  http://flatcolors.net/palette/566-flat-havana-nights
+  http://flatcolors.net/palette/539-flat-green
+  http://flatcolors.net/palette/966-flat-ui-design
+  http://flatcolors.net/palette/855-flat-green-blue-gray
+  http://flatcolors.net/palette/560-snowball-flat-colors
+*/
+
+// Breakpoints
+$medium-screen: 667px;
+$large-screen: 1024px;
+
+// Typography
+$base-font-family: $font-stack-system;
+$heading-font-family: $font-stack-lucida-grande;
+
+// Font Sizes
+$base-font-size: 1.0em;
+
+// Line height
+$base-line-height: 1.1;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: .25em;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #1565c0;
+$medium: #02b875;
+$medium-text: rgba(0, 171, 107,1);
+$slack: #3aaf85;
+$snapchat: #FFFC00;
+$youtube: #cd201f;
+$facebook: #3b5999;
+$twitter: #55acee;
+$linkedin: #0077B5;
+$instagram: #3f729b;
+$nuzzel-bg: #272727;
+$nuzzel-light-blue: #6AB3F7;
+$nuzzel-dark-blue: #3978B4;
+
+$mark-color: #FEFECC;
+
+$white:  #fff;
+$almost-white1: #f8f8f8;
+$light-gray: #ddd;
+
+$gray: #aaa;
+$medium-gray: #999;
+$light-gray: #c1c1c1;
+$silver: #ddd;
+$site-light-gray: rgba(255, 255, 250, 1);
+$site-dark-gray: #A69F7D;
+$md-dark: rgba(0, 0, 0, 0.54);
+$md-dark-inactive: rgba(0, 0, 0, 0.26);
+$dark-gray: #333;
+
+$black:  #000;
+$flat-black: #1C2021;
+
+$sherpa-dark: #222528;
+$sherpa-blue: #3f4651;
+$sherpa-bluegray: #585a5b;
+$sherpa-gray: #b9bda7;
+$sherpa-lightgray: #e8ebe6;
+$sherpa-green: #739a84;
+$sherpa-flatorange: #ef6841;
+$sherpa-burntorange: #ee3a24;
+
+$site-red: #FF2119;
+$NEJM-red: #EC0000;
+$red: #FF4136;
+$flat-red: #E3000E;
+$pomegranate: #f22613;
+$thunderbird: #d91e18;
+$red-monza: #cf000f;
+$flat-orange: hsla(17, 57%, 57%, 1.0);
+$flat-orange-1: #F7784A;
+$flat-orange-2: #FF7C52;
+$flat-orange-3: #FF8849;
+$flat-orange-4: #E75926;
+$fivethirtyeight-orange: hsla(18, 83%, 58%, 1);
+$fivethirtyeight-orange-desat: #F2984E;
+$carrot-dark: #E8663E;
+$carrot-light: #F87E51;
+$orange:  #FF851B;
+$flat-brown: #3B3837;
+$fivethirtyeight-graybrown-desat: hsla(33, 10%, 35%, 1);
+$fivethirtyeight-graybrown-exdesat: hsla(33, 10%, 54%, 1);
+$flat-yellow: #000;
+
+$site-manilla: hsla(59, 96%, 91%, 1);
+$yellow:  #FFDC00;
+$site-green: #5D8861;
+$site-green-light: #BAFFC2;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+$aqua:  #7FDBFF;
+$madison: hsla(210, 29%, 24%, 1);
+$ebony-clay: hsla(209, 30%, 19%, 1);
+$pickled-bluewood: hsla(210, 29%, 29%, 1);
+$blue:  #0074D9;
+$navy:  #001F3F;
+$site-dark-blue: #141B1C;
+$flat-navy: hsla(197, 15%, 20%, 1);
+$flat-midnight-blue: #122131;
+$cool-blue: #268bd2;
+
+$NEJM-dark: #131B17;
+$NEJM-header-bg: #FFFDD0;
+$NEJM-table-bg: #FFFEF8;
+$NEJM-table-header-bg: #F2EFC6;
+$highlight-yellow: $site-manilla;
+$primary-blue: hsla(240, 3%, 23%, 1);
+$site-blue: hsla(201, 13%, 35%, 1);
+$site-blue-light: #9AB8C8;
+$cararra: #F2F1EF;
+$porcelain: #ecf0f1;
+$pumice: #d2d7d3;
+
+$primary-color: $flat-navy;
+$primary-color-dark-10: darken($primary-color, 10%);
+$primary-color-dark-20: darken($primary-color, 20%);
+$primary-color-light-40: lighten($primary-color, 40%);
+$primary-color-light-30: lighten($primary-color, 30%);
+
+$secondary-color: rgba(237, 0, 1, 1);
+$secondary-color-bright: #FF0002;
+
+$hero-bg: $primary-color;
+$infog-bg: hsla(43, 21%, 6%, 0.8);
+$posts-bg: hsla(43, 21%, 6%, 0.6);
+$infographics-bg: hsla(40, 5%, 20%, 0.1);
+$quote-container-bg: #464646;
+
+$link-color: hsla(18, 83%, 57%,1);
+$link-hover: $link-color;
+$link-underline: hsla(0,0%,0%,0.4);
+$link-underline-light: hsla(0,0%,100%,0.3);
+
+$text-selection: hsla(119, 94%, 79%, 0.8);
+
+$post-date: hsla(38, 12%, 25%, 0.2);
+$post-title: hsla(38, 12%, 25%, 0.9);
+
+$icon-inactive: rgba(0,0,0,.26);
+$icon-active: rgba(0,0,0,.54);
+
+// FLAT
+$flat-green-0: rgba( 34, 70, 45,1);
+$flat-green-1: rgba(176,201,184,1);
+$flat-green-2: rgba( 78,121, 91,1);
+$flat-green-3: rgba(  9, 45, 20,1);
+$flat-green-4: rgba(  0,  7,  2,1);
+
+$flat-red-0: rgba(122, 85, 85,1);
+$flat-red-1: rgba(179,147,147,1);
+$flat-red-2: rgba(151,114,114,1);
+$flat-red-3: rgba( 89, 54, 54,1);
+$flat-red-4: rgba( 92, 37, 37,1);
+
+$flat-blue-0: rgba( 58, 68, 80,1);
+$flat-blue-1: rgba( 98,107,117,1);
+$flat-blue-2: rgba( 76, 87, 99,1);
+$flat-blue-3: rgba( 37, 47, 58,1);
+$flat-blue-4: rgba( 27, 43, 60,1);
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $slack;
+
+// Border
+$base-border-color: transparentize(#ddd, 0.8);
+$base-border: 0.1em solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+//$secondary-background-color: tint($base-border-color, 75%);
+$secondary-background-color: transparentize(#eee, 0.9);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+/*
+$rgba-primary-0: rgba( 19, 21, 27,1)
+$rgba-primary-1: rgba( 49, 52, 60,1)
+$rgba-primary-2: rgba( 25, 26, 30,1)
+$rgba-primary-3: rgba( 14, 17, 24,1)
+$rgba-primary-4: rgba( 11, 14, 22,1)
+
+$rgba-primary-0: rgba( 22, 25, 31,1)
+$rgba-primary-1: rgba( 59, 63, 73,1)
+$rgba-primary-2: rgba( 34, 36, 42,1)
+$rgba-primary-3: rgba( 17, 20, 28,1)
+$rgba-primary-4: rgba( 12, 16, 25,1)
+
+$rgba-primary-0: rgba( 32, 47, 62,1)
+$rgba-primary-1: rgba(161,172,183,1)
+$rgba-primary-2: rgba( 72, 89,106,1)
+$rgba-primary-3: rgba( 11, 25, 39,1)
+$rgba-primary-4: rgba(  0,  3,  6,1)
+
+$rgba-secondary-1-0: rgba( 47, 38, 32,1)
+$rgba-secondary-1-1: rgba(108, 96, 85,1)
+$rgba-secondary-1-2: rgba( 62, 55, 50,1)
+$rgba-secondary-1-3: rgba( 42, 32, 23,1)
+$rgba-secondary-1-4: rgba( 38, 26, 16,1)
+
+$rgba-secondary-2-0: rgba( 19, 28, 28,1)
+$rgba-secondary-2-1: rgba( 51, 65, 65,1)
+$rgba-secondary-2-2: rgba( 30, 37, 37,1)
+$rgba-secondary-2-3: rgba( 14, 25, 25,1)
+$rgba-secondary-2-4: rgba( 10, 23, 23,1)
+
+$rgba-secondary-1-0: rgba( 95, 51, 45,1)
+$rgba-secondary-1-1: rgba(255,227,223,1)
+$rgba-secondary-1-2: rgba(163,113,106,1)
+$rgba-secondary-1-3: rgba( 60, 18, 13,1)
+$rgba-secondary-1-4: rgba( 10,  1,  0,1)
+
+$rgba-complement-0: rgba( 47, 42, 32,1)
+$rgba-complement-1: rgba(108,101, 85,1)
+$rgba-complement-2: rgba( 62, 58, 50,1)
+$rgba-complement-3: rgba( 42, 36, 23,1)
+$rgba-complement-4: rgba( 38, 31, 16,1)
+*/

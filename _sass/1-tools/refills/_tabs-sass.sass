@@ -1,0 +1,28 @@
+.accordion-tabs
+  @include outer-container
+  background: white
+  text-align: center
+  margin: 0 auto
+
+.accordion-tabs-minimal
+  $base-border-color: $grey-border !global
+  $base-background-color: #fff !global
+  $base-spacing: 1.4em
+  $action-color: $secondary-color !global
+  $dark-gray: $grey-dark !global
+  /*$medium-screen: 40em !default*/
+  //$tab-mode: $medium-screen
+  $tab-link-color: $primary-dark
+  $tab-border: 0.1em solid $base-border-color
+  $tab-active-background: $base-background-color
+  $tab-inactive-color: $base-background-color
+  $tab-inactive-hover-color: $grey-meta
+
+
+  @include fill-parent
+  margin: 2em auto
+  line-height: 1.5
+  padding: 0
+
+  a
+    color: $grey-icon
