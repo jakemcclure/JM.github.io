@@ -3,16 +3,15 @@ layout: default
 ---
 <main class="content wrapper cf" role="main">
   <article class="post-container container">
-    <div class="post-meta">
-      <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-header">
+      <header class="post-title">{{ page.title }}</header>
       <p class="published">
-        <amp-img src="{{ site.baseurl }}/assets/images/icons/cal-date.svg" alt="Date" height="16" width="16"></amp-img>
+        <amp-img src="{{ site.baseurl }}/assets/images/icons/cal-date.svg" alt="Date" height="12" width="12"></amp-img>
         <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
         </p>
       </div>
 
     <section class="post-content">
-      <a name="topofpage"></a>
       {{content}}
       </section>
 
@@ -55,9 +54,9 @@ layout: default
         <h5 class="index-headline featured">
           <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
           </h5>
-          <div class="tooltip">
+          <div class="tooltip dev-hide">
             <i class="fa fa-rss"></i>
-            <!--{% include newsletter.html %}-->
+
             </div>
         </div>
       </div>

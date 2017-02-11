@@ -3,6 +3,7 @@
     <header class="section-header container">Thoughts</header>
     <div class="items">
       {% for post in paginator.posts %}
+
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <header class="post-header">
           <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
@@ -15,6 +16,7 @@
             </p>
           </main>
         </article>
+
       {% endfor %}
     </div>
   </main>
