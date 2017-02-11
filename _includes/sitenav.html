@@ -12,18 +12,9 @@
           <span>Apps</span></a></li>
 
       <li>
-        <amp-img {% if page.url == "/blog.html" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/blog.svg" alt="Blog" height="24" width="19"></amp-img>
-        <span>Blog</span>
-        <!--<a href="#blog-loop" {% if page.url == "/blog/" %}class="active"{% endif %}>
-          <amp-img {% if page.url == "/blog.html" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/blog.svg" alt="Blog" height="24" width="19"></amp-img>
-          <span>Blog</span></a>--></li>
-
-      <li>
-        <amp-img {% if page.url == "/social.html" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/msg.svg" alt="Social" height="24" width="30"></amp-img>
-        <span>Chat</span>
-        <!--<a href="/social" {% if page.url == "/social.html" %}class="active"{% endif %}>
-          <amp-img {% if page.url == "/social.html" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/msg.svg" alt="Social" height="24" width="30"></amp-img>
-          <span>Chat</span></a>--></li>
+        <a href="#blog-loop" {% if page.url == "/blog/" %}class="active"{% endif %}>
+          <amp-img {% if page.url == "/blog/" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/blog.svg" alt="Blog" height="24" width="19"></amp-img>
+          <span>Blog</span></a></li>
 
       <li>
         <a href="/resources" {% if page.url == "/resources.html" %}class="active"{% endif %}>
