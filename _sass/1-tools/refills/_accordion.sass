@@ -1,0 +1,24 @@
+#accordion
+  section > h4
+    padding: 0.5em
+
+  section[expanded] > h4
+    background: #333
+    color: #eee
+
+  section:not([expanded]) > h4
+    color: #777
+    background: #eee
+
+  section[expanded] .show-more
+    display: none
+  section:not([expanded]) .show-less
+    display: none
+
+  .nested-accordion h4
+    font-size: 14px
+    background-color: #ddd
+
+  amp-accordion
+    border: none
+    background: rgba(150,150,150,0.1)
