@@ -39,13 +39,14 @@
 
   .post-excerpt
     text-align: left
+    padding-bottom: 1em
     font:
       size: 0.9em
       weight: 300
     line-height: 1.5
     color: $grey-800
-    overflow: hidden
-    white-space: nowrap
+    //overflow: hidden
+    //white-space: nowrap
     text-overflow: ellipsis
     p
       margin: 0 auto 1em
@@ -60,12 +61,12 @@
     font-size: 0.7rem
     letter-spacing: 0.05em
     font-weight: 400
-    box-shadow: 0 0.05em 0.1em rgba(0,0,0,.1)
+    box-shadow: 0 0.2em 0.4em rgba(0,0,0,.3)
     &:hover, &:focus
       color: $grey-50
       border: none
       background: transparentize($secondary-color, 0.3)
-      box-shadow: 0 0.055em 0.12em rgba(0,0,0,.15)
+      box-shadow: 0 0.15em 0.3em rgba(0,0,0,0.4)
 
   .container
     .post
