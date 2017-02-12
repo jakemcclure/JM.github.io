@@ -11,12 +11,14 @@ $size50: 5* $size10
 $local-max-width: 45em
 
 $font-serif: Georgia,Cambria,"Times New Roman",Times,"Lora",serif
-$font-Playfair: "Playfair Display",Georgia,Cambria,"Times New Roman",Times,"Lora",serif
+$font-Playfair: "Playfair Display",$font-serif
+$font-Adamina: 'Adamina',$font-serif
+$font-Cormorant-Infant: 'Cormorant Infant',$font-serif
+
 $font-sans: "Helvetica Neue","Open Sans",Arial,Helvetica,sans-serif
-$font-Lato: "Lato",$font-sans
+$font-Lato: "Lato",$font-stack-system
 $font-SSS: 'Source Sans Pro',$font-stack-system
-$font-Adamina: 'Adamina'
-$font-Questrial: 'Questrial',$font-sans
+$font-Questrial: 'Questrial',$font-stack-system
 
 @mixin respond-to($breakpoint)
   @media only screen and (max-width: $breakpoint + px)
@@ -51,7 +53,11 @@ body
 .dark
   background: $primary-dark
   color: white
+  a
+    color: white
 
 .light
   background: white
   color: $primary-dark
+  a
+    color: $primary-dark
