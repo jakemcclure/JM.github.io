@@ -19,7 +19,10 @@
 
 #blog-loop
   .items
-    @fill-parent
+    @include fill-parent
+    > article
+      height: auto
+
     @include media(550px)
       display: flex
       flex-wrap: wrap

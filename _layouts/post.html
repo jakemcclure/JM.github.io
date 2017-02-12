@@ -2,6 +2,7 @@
 layout: default
 ---
 <main class="content wrapper cf" role="main">
+
   <article class="post-container container">
 
     <header class="post-header">
@@ -11,28 +12,21 @@ layout: default
         <time class="date" datetime="{{ page.date | date: date_to_string }}">{{ page.date | date_to_string }}</time>
         <span class="read-time">{% assign words = content | number_of_words %}
           {% if words < 360 %} 1 min
-          {% else %}{{ words | divided_by: 180 }} min{% endif %} read
-          </span>
+          {% else %}{{ words | divided_by: 180 }} min{% endif %} read</span>
         </p>
       </header>
 
-    <section class="post-content">
+    <main id="post-content" class="post-content">
       {{content}}
-      </section>
+    </main>
 
-    <footer class="post-footer">
-      <section class="share">
-        <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="">
-          Share this post {% include icon-twitter.html %}
-          </a>
-        </section>
-      </footer>
+    <footer class="post-footer"><!-- {% include share/twitter.html %} --></footer>
 
-    <div class="bottom-teaser cf">
-
-      <div class="isLeft">
-        <h5 class="index-headline featured"><span class="section-header">Written by</span>
-          </h5>
+    <div class="posts-outro cf">
+      <div class="col-left">
+        <header class="featured">
+          <span class="section-header">Written by</span>
+          </header>
         <section class="author">
           <div class="author-image"></div>
           <h4>{{ site.name }}</h4>
@@ -55,15 +49,12 @@ layout: default
         </section>
       </div>
 
-      <div class="isRight">
-        <h5 class="index-headline featured">
-          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
-          </h5>
-          <div class="tooltip dev-hide">
-            <i class="fa fa-rss"></i>
-
-            </div>
+      <div class="col-right">
+        <header class="featured">
+          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a></header>
+          <div class="tooltip dev-hide"><i class="fa fa-rss"></i></div>
         </div>
+
       </div>
     </article>
   {% include {{site.prime-trial-banner}} %}
