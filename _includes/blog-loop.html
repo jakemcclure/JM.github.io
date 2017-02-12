@@ -1,24 +1,29 @@
 <section id="blog-loop" class="cf frame wrapper">
   <main class="container">
-    <header class="section-header container">Thoughts</header>
+    <header class="section-header">Thoughts</header>
     <div class="items">
       {% for post in paginator.posts %}
 
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <header class="post-header">
-          <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-          <time class="post-meta date" datetime="{{ post.date | %x %X }}">{{ post.date | date: "%-d %b %Y" }}</time>
-          <span class="read-time">{% assign words = content | number_of_words %}
-            {% if words < 360 %} 1 min
-            {% else %}{{ words | divided_by: 180 }} mins
-            {% endif %} read
-          </span>
-          {% if post.category %}<span class="post-meta category">{{ post.category }}</span>{% endif %}
-          </header>
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+            <div class="post-meta">
+              <amp-img src="{{ site.baseurl }}/assets/images/icons/cal-date.svg" alt="Date" height="12" width="12"></amp-img>
+              <time class="date" datetime="{{ post.date | %x %X }}">{{ post.date | date: "%-d %b" }}</time>
+              <span class="read-time">{% assign words = content | number_of_words %}
+                {% if words < 360 %} 1 min
+                {% else %}{{ words | divided_by: 180 }} mins
+                {% endif %} read
+                </span>
+              {% if post.category %}
+                <span class="post-meta category">{{ post.category }}</span>
+                {% endif %}
+              </div>
+            </header>
+
         <main class="post-excerpt" itemprop="description">
-          <p>{{ post.excerpt | strip_html | truncatewords: 75 }}
-            <span class="link"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">Read More</a></span>
-            </p>
+          <p>{{ post.excerpt | strip_html | truncatewords: 75 }}</p>
+          <a class="link" href="{{ site.baseurl }}{{ post.url }}" itemprop="url">Read More</a>
           </main>
         </article>
 
