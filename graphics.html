@@ -50,7 +50,7 @@ images:
             delay="5000">
       {% for graphic in site.graphics %}
         <main class="graphic" itemprop="content">
-          <amp-img src="{{ graphic.graphic_path }}" alt="{{ graphic.title }}" height="{{ graphic.graphic_height }}" width="{{ graphic.graphic_width }}" layout="responsive"></amp-img>
+          <amp-img src="{{ site.url }}/{{ graphic.graphic_path }}" alt="{{ graphic.title }}" height="{{ graphic.graphic_height }}" width="{{ graphic.graphic_width }}" layout="responsive"></amp-img>
           </main>
       {% endfor %}
       </amp-carousel>
@@ -59,9 +59,11 @@ images:
 
   <section id="visual-abstract" class="cf frame container">
     <header class="section-header">Visual Abstract Assets</header>
+    <a class="contact-me" href="http://twitter.com/jake_mcclure">Contact for troubleshooting</a>
+
     <div id="visual-abstract-assets" class="cf">
       {% for image in page.images %}
-      <amp-img class="asset" src="{{ site.baseurl }}/{{ image.path }}" width="{{ image.image_width }}" height="{{ image.image_height }}" layout="responsive"></amp-img>
+      <amp-img class="asset" src="{{ site.url }}/{{ image.path }}" width="{{ image.image_width }}" height="{{ image.image_height }}" layout="responsive"></amp-img>
       {% endfor %}
     </div>
   </section>

@@ -1,6 +1,26 @@
 #graphics-loop .graphic, #graphic-design .graphic
   @include fill-parent
 
+#visual-abstract, #graphics-loop
+  .contact-me
+    display: inline-block
+    float: left
+    text-align: center
+    margin-left: 2em
+    font:
+      size: 0.6rem
+      weight: 400
+    color: white
+    background: transparentize($primary-light, 0.3)
+    padding: 0.75em 1em
+    border-radius: 1em
+    text-decoration: none
+    text-transform: uppercase
+    border: none
+    &:hover, &:focus
+      text-decoration: none
+      background: transparentize($primary-light, 0.2)
+
 #visual-abstract-assets
   display: flex
   flex-wrap: wrap
@@ -20,8 +40,9 @@
       width: 20%
 
 #graphics-loop
-  background: $grey-50
-  amp-img
+  background: $grey-100
+
+  amp-img, amp-carousel
     border-radius: 1em
 
   .container
@@ -38,8 +59,8 @@
       color: $secondary-color
       padding: 0.05em 0.2em
       font-weight: 300
+      border-bottom: $size1 dashed transparentize($secondary-color, 0.25)
       &:hover
-        text-decoration: none
-        border-radius: 0.5em
+        //border-radius: 0.5em
         border-width: 0px
         background-color: $grey-100
