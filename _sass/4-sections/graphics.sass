@@ -1,10 +1,12 @@
+//#graphics
+  background: $grey-100
+
 #graphics-loop .graphic, #graphic-design .graphic
   @include fill-parent
 
 #visual-abstract, #graphics-loop
   .contact-me
     display: inline-block
-    float: left
     text-align: center
     margin-left: 2em
     font:
@@ -12,6 +14,7 @@
       weight: 400
     color: white
     background: transparentize($primary-light, 0.3)
+    box-shadow: 0 0.125em 0.3125em rgba(0,0,0,.26)
     padding: 0.75em 1em
     border-radius: 1em
     text-decoration: none
@@ -20,10 +23,18 @@
     &:hover, &:focus
       text-decoration: none
       background: transparentize($primary-light, 0.2)
+      box-shadow: 0 0.1em 0.3em rgba(0,0,0,.52)
+
+#visual-abstract
+  .contact-me
+    margin: -4em 0.5em 0 0
+    float: right
 
 #visual-abstract-assets
   display: flex
   flex-wrap: wrap
+  //text-align: center
+  justify-content: center
   //align-items: baseline
 
   .asset
@@ -40,8 +51,6 @@
       width: 20%
 
 #graphics-loop
-  background: $grey-100
-
   amp-img, amp-carousel
     border-radius: 1em
 
