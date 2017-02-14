@@ -20,8 +20,6 @@
 #blog-loop
   .items
     @include fill-parent
-    > article
-      height: auto
 
     @include media(550px)
       display: flex
@@ -84,8 +82,6 @@
 
       .post-title
         border-bottom: $size3 solid rgba(0,0,0,0)
-        &:hover, &:focus
-          border-color: transparentize($grey-100, 0.5)
         > a
           color: $grey-700
           &:hover, &:focus
@@ -93,7 +89,7 @@
             border: none
         letter-spacing: -0.02em
         font:
-          family: $font-SSS
+          family: $font-mont
           weight: 700
           style: normal
           size: 1.3em
@@ -104,7 +100,7 @@
         margin-left: 0.5em
         align-items: center
         text-align: left
-        color: $grey-600
+        color: $grey-400
         font-size: 0.7em
         text-transform: uppercase
         letter-spacing: 0.05em
