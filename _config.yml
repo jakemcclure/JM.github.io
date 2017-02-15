@@ -5,7 +5,7 @@ baseurl: ""
 url: "http://JakeMcClure.net"
 
 # ASSETS
-logo:  "/assets/images/hoof-logo.svg"
+logo:  "/assets/images/hoof-steth-title.svg"
 logo-amp:  "/assets/images/hoofbeats-text.svg"
 logo-quote: "/assets/images/hoofbeats-quote-text-container.svg"
 logo-blog-text: "/assets/images/hoofbeats-text.svg"
