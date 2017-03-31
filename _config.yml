@@ -56,7 +56,6 @@ collections:
   - apps
   - workflows
   - resources
-    output: true
 
 # Gemfile, Gemfile.lock - The Gemfile and Gemfile.lock files are used by Bundler to keep track of the required gems and gem versions you need to build your Jekyll site.
 
