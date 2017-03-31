@@ -21,7 +21,7 @@ A decade ago, the concept of "translational research" provided an academic, prac
 
 The scientific method has always been our broad framework for approaching clinical problems. Translational research merely refined the approach by adding in a component of practicality.
 
-> *practical*: *adj.*  of or concerned with the actual doing or use of something rather than with theory and ideas
+> **practical**: *adj.*  of or concerned with the actual doing or use of something rather than with theory and ideas
 
 It's illogical to approach research and problem-solving in any other way. At the end of the day, if an executed strategy & its results don't move us incrementally closer to a practical solution, then why do we go through these motions in the first place?
 

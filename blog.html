@@ -1,23 +1,20 @@
 ---
 layout: default
-title: Hoofbeats •  by Jake McClure
+title: ctrl alt M.D.
 permalink: /blog/
 ---
-<main class="content" role="main">
-  <section id="blog-loop">
-    <header class="blog-header">
-      <a href="{{ site.baseurl }}/blog/" class="logo">
-        <amp-img class="amp-logo"
-          src="{{ site.baseurl }}{{ site.logo-blog-text }}"
-          width=890 height=146
-          layout="responsive">
-          </amp-img>
-        </a>
-      <!-- <h1 class="blog-title">{{ site.blog-title }}</h1> -->
-      <!-- <h2 class="blog-description">{{ site.blog-description }}</h2> -->
-    </header>
+<section id="blog-loop">
+  <header class="blog-header">
+    <a href="{{ site.baseurl }}/blog/" class="logo">
+      <amp-img class="amp-logo"
+        src="{{ site.baseurl }}{{ site.logo-blog-text }}"
+        width=890 height=146
+        layout="responsive">
+        </amp-img>
+      </a>
+    <!-- <h1 class="blog-title">{{ site.blog-title }}</h1> -->
+    <!-- <h2 class="blog-description">{{ site.blog-description }}</h2> -->
+  </header>
 
-  {% include posts-index.html %}
-  </section>
-  {% include {{ site.prime-trial-banner }} %}
-</main>
+{% include posts-index.html %}
+</section>

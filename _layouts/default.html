@@ -2,7 +2,11 @@
 <html ⚡>
 {% include head.html %}
   <body>
+    <main class="content" role="main">
     {{ content }}
+    
+    {% include {{ site.prime-trial-banner }} %}
+    </main>
 
     {% include footer.html %}
 

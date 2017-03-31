@@ -1,4 +1,4 @@
-Stitle:  Hoofbeats
+title: ctrl alt M.D.
 email:  holler@JakeMcClure.net
 description: Understanding healthcare and technology in the Information Age
 baseurl: ""
@@ -14,8 +14,9 @@ author_image:  "/assets/images/author.png"
 #PERSONNEL
 name:  "Jake McClure, M.D."
 author: jakemcclure
-bio: Millennial physician, steward of practical integration of technology in healthcare and education
+bio: doc + dad; steward of practical integration of technology in healthcare and education
 repository: jakemcclure/JakeMcClure.github.com
+#repository: https://github.com/jakemcclure/JakeMcClure.github.io
 
 social:
   name: Jake McClure
@@ -50,10 +51,12 @@ prime-trial-banner: "amp/_store/_prime_trial_320x50.html"
 
 # BUILD MODIFIERS
 collections:
-- graphics
-- infographics
-- apps
-- workflows
+  - graphics
+  - infographics
+  - apps
+  - workflows
+  - resources
+    output: true
 
 # Gemfile, Gemfile.lock - The Gemfile and Gemfile.lock files are used by Bundler to keep track of the required gems and gem versions you need to build your Jekyll site.
 
@@ -88,6 +91,8 @@ exclude:
   - ".bundle"
   - vendor
   - node_modules
+  - dev
+  - references
 
 gems:
   - jekyll-feed

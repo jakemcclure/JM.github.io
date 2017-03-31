@@ -1,0 +1,32 @@
+<section id="sitenav-bottom" class="wrapper">
+  <nav id="bottomnav" class="container">
+    <ul class="page-links nav-right">
+      <li>
+        <a href="/graphics/" {% if page.url == "/graphics/" %}class="active"{% endif %}>
+          <amp-img {% if page.url == "/graphics/" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/visuals.svg" alt="Graphics" height="24" width="26"></amp-img>
+          <span>Graphics</span></a></li>
+
+      <li>
+        <a href="#appHOF" {% if page.url == "/apps/" %}class="active"{% endif %}>
+          <amp-img {% if page.url == "/apps/" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/apps.svg" alt="Apps" height="24" width="31"></amp-img>
+          <span>Apps</span></a></li>
+
+      <li>
+        <a href="#blog-loop" {% if page.url == "/blog/" %}class="active"{% endif %}>
+          <amp-img {% if page.url == "/blog/" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/blog.svg" alt="Blog" height="24" width="19"></amp-img>
+          <span>Blog</span></a></li>
+
+      <li>
+        <a href="/resources/" {% if page.url == "/resources.html" %}class="active"{% endif %}>
+          <amp-img {% if page.url == "/resources.html" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/resources.svg" alt="Visuals" height="24" width="28.9"></amp-img>
+          <span>Resources</span></a></li>
+
+      <!--<li><a href="/workflows" {% if page.url == "/workflows.html" %}class="active"{% endif %}>Workflows</a></li>-->
+
+      <li>
+        <a href="/" {% if page.url == "/" %}class="active"{% endif %}>
+          <amp-img {% if page.url == "/" %}class="active"{% endif %} src="{{ site.url }}/assets/images/icons/home-192.svg" alt="Home" height="24" width="28.666"></amp-img>
+          <span>Home</span></a></li>
+    </ul>
+    </nav>
+  </section>

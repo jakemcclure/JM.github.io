@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Dox Health &bull; Patient Resources
-permalink: /pts/
+title: Generic/Value Drug Lists
+permalink: /rx/
+published: true
+display: true
 ---
 
 ## Generic/Value Drug Lists

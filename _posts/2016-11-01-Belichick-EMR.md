@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Belichick Wouldn't Be Fond of EMR Meaningful Use Either
-date:       2016-11-01
+date:       2016-11-01 09:17:40 -0500
 published:  true
 thumbnail:  "/assets/images/posts/belichick.jpg"
 thumbnail-video:  "/assets/mov/posts/belichick.mp4"
@@ -14,6 +14,9 @@ tags:
   - Sports
 ---
 
+[New England Patriots](http://www.patriots.com/schedule-and-stats) head coach [Bill Belichick](https://en.wikipedia.org/wiki/Bill_Belichick) recently endured a nightmare of [Microsoft Surface tablet](https://www.amazon.com/gp/product/B01606KJ6C/ref=as_li_ss_tl?th=1&linkCode=ll1&tag=mcclure-20&linkId=006492c3f17723a8c1387f57371788b5) troubleshooting on the sidelines. Needless to say, he would not be a huge fan of the present-day state of EMRs either.
+
+<!-- excerpt -->
 <amp-video
   width="1024" height="512"
   layout="responsive"
@@ -23,10 +26,6 @@ tags:
     <p>Your browser doesn’t support HTML5 video</p>
   </div>
 </amp-video>
-
-[New England Patriots](http://www.patriots.com/schedule-and-stats) head coach [Bill Belichick](https://en.wikipedia.org/wiki/Bill_Belichick) recently endured a nightmare of [Microsoft Surface tablet](https://www.amazon.com/gp/product/B01606KJ6C/ref=as_li_ss_tl?th=1&linkCode=ll1&tag=mcclure-20&linkId=006492c3f17723a8c1387f57371788b5) troubleshooting on the sidelines. Needless to say, he would not be a huge fan of the present-day state of EMRs either.
-
-<!-- excerpt -->
 
 Full transcript: [Belichick on tablet technology](http://www.patriots.com/news/2016/10/18/bill-belichick-conference-call-transcript-1018)
 

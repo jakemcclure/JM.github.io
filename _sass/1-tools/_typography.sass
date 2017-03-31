@@ -40,3 +40,21 @@ pre
     border: 0
     padding-right: 0
     padding-left: 0
+
+// FLUID TYPOGRAPHY
+  .fluid-type
+    font-size: 0.875rem
+    @media screen and (min-width: 20rem)
+      .fluid-type
+        font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60))
+    @media screen and (min-width: 80rem)
+      .fluid-type
+        font-size: 1.375rem
+  .molten-leading
+    line-height: 1.2em
+    @media screen and (min-width: 20em)
+      .molten-leading
+        line-height: calc(1.2em + 0.6 * ((100vw - 20em) / 60))
+    @media screen and (min-width: 80em)
+      .molten-leading
+        line-height: 1.8em

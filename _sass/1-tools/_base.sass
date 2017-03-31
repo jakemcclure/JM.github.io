@@ -10,19 +10,44 @@ $size30: 3 * $size10
 $size50: 5* $size10
 $local-max-width: 45em
 
+// MINIMA SIZING
+$base-font-size:   $rs !default
+$base-font-weight: 300 !default
+$heading-primary-weight: 900
+$heading-secondary-weight: 700
+$small-font-size:  $base-font-size * 0.875 !default
+$base-line-height: 1.5 !default
+$spacing-unit:     2em !default
+
+// Width of the content area
+$content-width:    800px !default
+$on-palm:          600px !default
+$on-laptop:        800px !default
+
+
 $font-serif: Georgia,Cambria,"Times New Roman",Times,"Lora",serif
-$font-Playfair: "Playfair Display",$font-serif
+$font-Playfair: 'Playfair Display',$font-serif
+$font-ptserif: 'PT Serif',$font-serif
+$font-prata: 'Prata',$font-serif
+$font-arapey: 'Arapey',$font-serif
 $font-Adamina: 'Adamina',$font-serif
 $font-Cormorant-Infant: 'Cormorant Infant',$font-serif
 $font-sans: "Helvetica Neue","Open Sans",Arial,Helvetica,sans-serif
 $font-Lato: "Lato",$font-stack-system
+$font-sss: 'Source Sans Pro',$font-stack-system
 $font-SSS: 'Source Sans Pro',$font-stack-system
 $font-karla: 'Karla', $font-sans
 $font-mont: 'Montserrat', $font-sans
+$font-oswald: 'Oswald', $font-sans
 $font-Questrial: 'Questrial',$font-stack-system
+$font-marker: 'Permanent Marker', cursive, $font-stack-system
 
 @mixin respond-to($breakpoint)
   @media only screen and (max-width: $breakpoint + px)
+    @content
+
+@mixin media-query($device)
+  @media screen and (max-width: $device)
     @content
 
 // only needed for syntax highlighting
@@ -39,10 +64,11 @@ body
   font:
     family: $font-karla
     weight: 300
-  color: $primary-dark
+  color: rgba(black, 0.87)
   margin: 0 auto
   text-align: center
   padding: 0
+  box-sizing: border-box
   text-rendering: optimizelegibility
   -webkit-font-smoothing: antialiased
   -moz-font-feature-settings: "liga=1, dlig=1"
